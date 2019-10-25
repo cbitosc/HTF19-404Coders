@@ -1,0 +1,24 @@
+<html>
+    <?php require_once 'conn.php';?>
+    <head>
+    <title>
+        Login page
+    </title>    
+    </head>
+    <body>
+        <h1>STUDENT REGISTRATION</h1>
+        <form action="insertdb.php" method="post">
+            user name:<input type="text" name="uname"/><br/>
+            password:<input type="password" name="pw"/><br/>
+            branch:<input type="text" name="branch"/> <br/>
+
+            year:<input type="radio" name="year" value="first"/>1/4 
+                    <input type="radio" name="year" value="second"/>2/4
+                        <input type="radio" name="year" value="third"/>3/4
+                        <input type="radio" name="year" value="fourth">4/4  <br/>
+            roll num:<input type="text" name="uid"/>
+            <button type="submit" value="Register"/>
+        </form>
+    </body>
+    
+</html>
