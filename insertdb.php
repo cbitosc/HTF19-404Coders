@@ -21,7 +21,8 @@ $sql = "INSERT INTO student1 (Name,Password,Rollnum,Branch,Year)
 VALUES ('$uname','$pw','$uid','$branch','$year')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    header('Location:login.html');
+    //echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

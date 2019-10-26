@@ -18,7 +18,7 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         echo "login";
+         header('Location:request.html');
          
          
       }else {

@@ -1,18 +1,48 @@
-<html>
-    <head>
-    <title>
-        Login page
-    </title>    
-    </head>
-    <body>
-        <h1>STUDENT REGISTRATION</h1>
-        <form action="requestdb.php" method="post">
-            rollnum:<input type="text" name="uid"/><br/>
-            reason:<input type="text" name="reason"/> <br/>
-            date:<input type="text" name="date"/> <br/>
-            time:<input type="text" name="time"/> <br/>
-            <button type="submit" name="submit" value="submit">Submit</button>
-        </form>
-    </body>
     
+</html>
+
+<!DOCTYPE html>
+<html  >
+<head >
+	<title>STUDENT</title>
+	
+</head>
+<body bgcolor="#afeeee">
+ <img src="cbit.png" alt="CBIT LOGO" width="100" length="100" align="left">
+<center><h1 style="background-color:DodgerBlue;font-size:30px;font-family:'Verdana'; padding:20px;border:10px solid gray;margin:0;width:850px">Chaitanya Bharathi Institute Of Technology</h1></center>
+
+<div align="right"><a href="logout.php">LOGOUT</a></div>
+<br>
+
+
+<center><h1 style="font-size:20px;font-family:'Verdana';">Enter following details and press submit</h1></center>
+<center>
+<form action="requestdb.php" method="post" >
+	<p style=" font-family:'Verdana'; font-size: 20px">HODName:</p>
+	<input size="20" type="text" name="hname">
+	<br>
+    
+    <p style="font-size: 20px;font-family:'Verdana';">Roll Number:</p>
+    <input size="20" type="text" name="uid">
+    <br>
+    <p style="font-size: 20px;font-family:'Verdana';">branch:</p>
+    <input size="20" type="text" name="branch">
+    <br>
+    
+    <p style="font-size: 20px;font-family:'Verdana';">Time you want to leave at:</p>
+    <input  size="20" type="Time" name="time">
+    <br>
+    <p style="font-size: 20px;font-family:'Verdana';">Date:</p>
+    <input  size="20" type="Date" name="date">
+    <br>
+    
+    <p style="font-size: 20px;font-family:'Verdana';">Enter Reason:</p>
+    <textarea rows = "5" cols = "60" name = "reason" >Enter here...
+    </textarea>
+    <br>
+    
+    <input type="submit" name="SUBMIT">
+</center>
+</form>
+</body>
 </html>

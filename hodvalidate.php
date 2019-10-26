@@ -14,12 +14,12 @@
       //$active = $row['active'];
       
       $count = mysqli_num_rows($result);
+       $_SESSION["uname"]=$uname;
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($count == 1) {
-         echo "login";
-         
+      if($count >= 1) {
+          header('Location:hodapprove1.php');
          
       }else {
          echo "Your Login Name or Password is invalid";
